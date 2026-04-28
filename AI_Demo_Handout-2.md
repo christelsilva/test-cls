@@ -6,7 +6,7 @@
 
 
 
-## **How to use this handout**
+### **How to use this handout**
 
 This handout contains every prompt that will be demoed during the session. Copy any prompt below and paste it into your AI tool to follow along. Each demo lists:
 
