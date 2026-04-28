@@ -1,16 +1,14 @@
 
 
-**Generative AI Essentials**
+# Generative AI Essentials for Non-Technologists
 
-for Non-Technologists
+## Student Demo Handout
 
-**Student Demo Handout**
 
-*Copy any prompt below and paste it into your AI tool to follow along.*
 
-# **How to use this handout**
+## **How to use this handout**
 
-This handout contains every prompt that will be demoed during the session. Each demo lists:
+This handout contains every prompt that will be demoed during the session. Copy any prompt below and paste it into your AI tool to follow along. Each demo lists:
 
 * The file (if any) you'll need to attach when running the prompt  
 * A short description of what the demo shows  
@@ -18,9 +16,9 @@ This handout contains every prompt that will be demoed during the session. Each 
 
 Files referenced in this handout will be distributed separately. The 📎 callout box at the top of each demo tells you which file to attach. Demos without a callout don't need a file.
 
-# **Part 1 — Understanding LLMs**
+## **Part 1 — Understanding LLMs**
 
-## **Demo 1 — Non-deterministic behavior**
+### **Demo 1 — Non-deterministic behavior**
 
 Run this prompt twice and compare the responses. The same prompt will return different answers each time — this is by design. LLMs are probabilistic, not deterministic.
 
@@ -28,9 +26,9 @@ Run this prompt twice and compare the responses. The same prompt will return dif
 What are 3 catchy names for a new internal initiative focused on sustainable investing?
 ```
 
-# **Part 2 — Prompt Engineering Techniques**
+## **Part 2 — Prompt Engineering Techniques**
 
-## **Demo 2 — Structuring prompts (three levels)**
+### **Demo 2 — Structuring prompts (three levels)**
 
 Three versions of the same task, each with more structure than the last. Run all three and notice how dramatically the response improves as you move from vague to a fully structured prompt using the GCSE framework (Goal, Context, Source, Expectations).
 
@@ -63,7 +61,7 @@ Client: Sarah (12-year relationship, $5M+ AUM). Two prior emails were sent (Marc
 - Under 200 words, include subject line
 ```
 
-## **Demo 3 — Language effects**
+### **Demo 3 — Language effects**
 
 Three prompts on the same topic, each phrased for a different audience. Run all three and compare how dramatically the response changes based on how you frame the question.
 
@@ -85,7 +83,7 @@ Explain what a bond yield curve inversion means as if I'm a first-year analyst w
 Explain what a bond yield curve inversion means for a client newsletter. The audience is high-net-worth individuals who are financially literate but not traders. Focus on what it signals historically and what they should consider for their portfolio.
 ```
 
-## **Demo 4 — Bias in AI responses**
+### **Demo 4 — Bias in AI responses**
 
 A broad question that surfaces patterns from the training data. Look at the response and notice whether the list skews by gender, region, or era.
 
@@ -93,7 +91,7 @@ A broad question that surfaces patterns from the training data. Look at the resp
 Who are the top 10 financial advisors of all time?
 ```
 
-## **Demo 5 — Interpretation bias**
+### **Demo 5 — Interpretation bias**
 
 A vague prompt the model has to interpret. What kind of forecast did it give you — weather, financial, or sales? The model's interpretation reflects patterns in its training data.
 
@@ -101,7 +99,7 @@ A vague prompt the model has to interpret. What kind of forecast did it give you
 Give me today's forecast.
 ```
 
-## **Demo 6 — Meta-prompting (let the AI help you write the prompt)**
+### **Demo 6 — Meta-prompting (let the AI help you write the prompt)**
 
 | 📎 File required: Raw Client Meeting.docx (used in Step 3 below) |
 | :---- |
@@ -126,7 +124,7 @@ Now use this clarity to create a detailed prompt in a code block that I can save
 [Paste the prompt the AI just generated in Step 2, and attach Raw Client Meeting.docx]
 ```
 
-## **Demo 7 — Templatizing prompts for reuse**
+### **Demo 7 — Templatizing prompts for reuse**
 
 Take a prompt that works and convert it into a reusable template using placeholders. Compare the two versions below.
 
@@ -144,9 +142,9 @@ Create a client re-engagement email for our high-value client [CLIENT_NAME], let
 
 Ask the user to fill in these placeholders before generating the email.
 
-# **Part 3 — Drafting Content**
+## **Part 3 — Drafting Content**
 
-## **Demo 8 — Drafting without context (hallucination risk)**
+### **Demo 8 — Drafting without context (hallucination risk)**
 
 Run this prompt with no attached file. The model has never heard of "InsightEdge," so it will fill in the gaps — convincingly. Look closely at the features it invents.
 
@@ -154,7 +152,7 @@ Run this prompt with no attached file. The model has never heard of "InsightEdge
 Write a blog post announcing the launch of our new portfolio analytics tool, InsightEdge. We want to excite potential clients about modernizing their portfolio monitoring, especially those who have been relying on traditional manual reporting. Highlight its main features like automated performance attribution and real-time risk monitoring. Include a call to action to schedule a demo.
 ```
 
-## **Demo 9 — Adding a simple guardrail**
+### **Demo 9 — Adding a simple guardrail**
 
 Same prompt as Demo 8, but with one sentence added at the end. See how the response changes.
 
@@ -162,7 +160,7 @@ Same prompt as Demo 8, but with one sentence added at the end. See how the respo
 Write a blog post announcing the launch of our new portfolio analytics tool, InsightEdge. We want to excite potential clients about modernizing their portfolio monitoring, especially those who have been relying on traditional manual reporting. Highlight its main features like automated performance attribution and real-time risk monitoring. Include a call to action to schedule a demo. If you don't know who that product is or you don't have accurate information about that product, then respond with "I don't have reliable information about this product."
 ```
 
-## **Demo 10 — Drafting with context and guardrails**
+### **Demo 10 — Drafting with context and guardrails**
 
 | 📎 File required: InsightEdge Product.docx |
 | :---- |
@@ -182,7 +180,7 @@ Review the following product specification attached thoroughly before writing.
 - If you don't know who that product is or you don't have accurate information about that product, then respond with "I don't have reliable information about this product."
 ```
 
-## **Demo 11 — Drafting a client email with internal/external context separation**
+### **Demo 11 — Drafting a client email with internal/external context separation**
 
 | 📎 File required: Internal Memo.docx |
 | :---- |
@@ -221,7 +219,7 @@ This internal context is provided **only to inform tone and positioning**. It mu
   **"I don't have enough information to draft this email without risking internal data exposure."**
 ```
 
-## **Demo 12 — Drafting client meeting talking points**
+### **Demo 12 — Drafting client meeting talking points**
 
 Generates talking points using only the context provided in the prompt. Notice how guardrails prevent the model from inventing performance drivers or forecasts.
 
@@ -253,9 +251,9 @@ Create talking points for a 30-minute client review meeting.
   **"I don't have enough information to create client-ready talking points safely."**
 ```
 
-# **Part 4 — Summarization**
+## **Part 4 — Summarization**
 
-## **Demo 13 — Summarization tailored to three audiences**
+### **Demo 13 — Summarization tailored to three audiences**
 
 | 📎 File required: Morgan Stanley First Quarter 2026 Earnings Results.pdf |
 | :---- |
@@ -316,7 +314,7 @@ The summary will be used in a training session for Financial Advisors in their f
 - End with 2-3 sample talking points an advisor could use with a client
 ```
 
-## **Demo 14 — Summarizing a long email chain**
+### **Demo 14 — Summarizing a long email chain**
 
 This demo pulls emails directly from Outlook — no separate file needed. The AI tool will need access to your inbox and will summarize an existing thread containing "Project Aurora" in the subject line.
 
@@ -360,7 +358,7 @@ If you cannot summarize the thread without making assumptions, respond with:
 **"The email chain does not contain enough explicit information to produce a reliable summary."**
 ```
 
-## **Demo 15 — Transforming messy handwritten meeting notes**
+### **Demo 15 — Transforming messy handwritten meeting notes**
 
 | 📎 File required: handwritten-meeting-notes.jpg |
 | :---- |
@@ -392,9 +390,9 @@ Transform these rough handwritten meeting notes into a structured summary.
   - Include only if a date or topic is clearly mentioned
 ```
 
-# **Part 5 — Building a Knowledge Base Assistant**
+## **Part 5 — Building a Knowledge Base Assistant**
 
-## **Demo 16 — Grounded Q\&A from a single document**
+### **Demo 16 — Grounded Q\&A from a single document**
 
 | 📎 File required: Morgan Stanley First Quarter 2026 Earnings Results.pdf |
 | :---- |
@@ -453,9 +451,9 @@ What did the Board of Directors declare?
 What type of car should I buy if I have a family of 4?
 ```
 
-# **Part 6 — Editing and Tone Adjustment**
+## **Part 6 — Editing and Tone Adjustment**
 
-## **Demo 17 — Rewriting a blunt client email**
+### **Demo 17 — Rewriting a blunt client email**
 
 | 📎 File required: Email.txt |
 | :---- |
@@ -506,7 +504,7 @@ The rewritten email:
 - If the source email is missing essential details (e.g., unclear sign-off, missing reapplication guidance, ambiguous wording), ask a brief clarifying question before rewriting rather than making assumptions
 ```
 
-## **Demo 18 — Aligning content to a brand style guide**
+### **Demo 18 — Aligning content to a brand style guide**
 
 | 📎 File required: Communications Style Guide.docx AND Internal Announcement.docx |
 | :---- |
@@ -550,9 +548,9 @@ The revised announcement:
 - If the source announcement is ambiguous, preserve the ambiguity rather than clarifying or expanding it
 ```
 
-# **Part 7 — Working with Spreadsheets**
+## **Part 7 — Working with Spreadsheets**
 
-## **Demo 19 — Excel formulas and data operations**
+### **Demo 19 — Excel formulas and data operations**
 
 | 📎 File required: client\_data.xlsx |
 | :---- |
@@ -595,9 +593,9 @@ Highlight all clients with account values over $1 million
 Split the client names into first name and last name columns
 ```
 
-# **Part 8 — Classification with Few-Shot Prompting**
+## **Part 8 — Classification with Few-Shot Prompting**
 
-## **Demo 20 — Sentiment analysis across an email chain**
+### **Demo 20 — Sentiment analysis across an email chain**
 
 | 📎 File required: Client Email Correspondence.docx |
 | :---- |
@@ -671,9 +669,9 @@ Provide your response in four short sections:
 Keep the response concise, professional, and suitable for briefing a senior relationship or client-coverage leader.
 ```
 
-# **Part 9 — Extracting Structured Data**
+## **Part 9 — Extracting Structured Data**
 
-## **Demo 21 — Extracting director nominees into a clean table**
+### **Demo 21 — Extracting director nominees into a clean table**
 
 | 📎 File required: 2026\_Proxy\_Statement.pdf — extract pages 16–27 first, then attach those pages only |
 | :---- |
@@ -717,11 +715,11 @@ Use the attached Morgan Stanley 2026 Proxy Statement as the sole source of truth
 - If the user requests a different output format afterward (CSV, JSON, etc.), re-emit the same data in that format without re-extracting
 ```
 
-# **Part 10 — Process Mapping (5-prompt chain)**
+## **Part 10 — Process Mapping (5-prompt chain)**
 
 This is a connected sequence: each prompt builds on the output of the previous one. Run them in order, in the same conversation, so the model has access to all the prior outputs as context. None of these demos requires an attached file — the source content lives inside the prompts themselves.
 
-## **Demo 22 — Step 1: Capture the as-is process**
+### **Demo 22 — Step 1: Capture the as-is process**
 
 Turn a messy verbal description into a structured numbered process map. Notice the \[unclear\] flag — the prompt instructs the model to surface gaps rather than guess.
 
@@ -763,7 +761,7 @@ Produce a numbered list of steps in the order they happen. For each step, includ
 - At the very end, add a section titled "Gaps to clarify with the SME" that lists every [unclear] item plus any ambiguity you noticed that a new hire would trip over.
 ```
 
-## **Demo 23 — Step 2: Visualize the process as a flowchart**
+### **Demo 23 — Step 2: Visualize the process as a flowchart**
 
 Generates Python code (graphviz) that you can run to produce a PNG flowchart from the as-is map you just created.
 
@@ -796,7 +794,7 @@ The numbered as-is process map from the previous step. Every box in the diagram 
 - Use short, simple IDs for boxes (like S, A1, D1, W1). Only put words and spaces in the LABELS, never in the IDs.
 ```
 
-## **Demo 24 — Step 3: Identify friction in the as-is process**
+### **Demo 24 — Step 3: Identify friction in the as-is process**
 
 Now ask the model to find specific issues in the process map. The output is a structured table that feeds directly into the next prompt.
 
@@ -834,7 +832,7 @@ Impact: High / Medium / Low, based on a combination of time cost and error risk.
 - Aim for 5–10 issues. If there are fewer real ones, return fewer. Do not pad.
 ```
 
-## **Demo 25 — Step 4: Propose a simplified to-be process**
+### **Demo 25 — Step 4: Propose a simplified to-be process**
 
 The model now designs a realistic, improved version that addresses the issues from Demo 23\. Anything requiring new tooling or policy goes in Phase 2 instead.
 
@@ -867,7 +865,7 @@ Bullet list of changes that WOULD meaningfully improve the process but require n
 - If an as-is step was marked [unclear], carry that uncertainty forward rather than resolving it by guessing.
 ```
 
-## **Demo 26 — Step 5: Draft a formal SOP from the to-be process**
+### **Demo 26 — Step 5: Draft a formal SOP from the to-be process**
 
 The final step in the chain. The model produces a downloadable Word document that a new hire could follow on day one, using the to-be process as its factual spine.
 
